@@ -26,7 +26,7 @@ export default function Header() {
                             ))}
                         </motion.div>
                     </section>
-                    <section className='flex max-w-6xl z-20 top-0 pr-2 overflow-hidden tracking-wide text-white font-bold'>
+                    <section className='flex max-w-6xl z-20 top-0 pr-2 overflow-hidden'>
                         <motion.div
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
