@@ -39,7 +39,7 @@ export default function Body() {
                 >
                     <section className='relative bg-white w-[350px] h-[450px] rounded-2xl shadow-xl sm:w-[700px] sm:h-[300px]'>
                         <h1 className='flex p-6 font-bold text-1xl'>
-                            <span className='className='>
+                            <span className=''>
                                 {textslide[index]}
                             </span>
                         </h1>
