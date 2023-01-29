@@ -7,6 +7,7 @@
 @layer components{
     body{
         @apply bg-[conic-gradient(var(--tw-gradient-stops))] from-yellow-400 via-yellow-300 to-yellow-500;
+        @apply overflow-hidden;
     }
     ._arrow{
         @apply w-20 h-20 mx-14 cursor-pointer
