@@ -23,7 +23,7 @@ export default function Body() {
                 >
                     <section className='relative bg-white w-[350px] h-[450px] rounded-2xl shadow-xl sm:w-[700px] sm:h-[300px]'>
                         <span className='flex p-6 font-bold text-1xl'>
-                            <h1>Lorem ipsum in integer vel nunc blandit ultricies amet iaculis fermentum feugiat senectus sollicitudin, ultricies pharetra primis sociosqu quam diam integer volutpat euismod facilisis vitae facilisis. eleifend conubia massa mollis dui maecenas pharetra potenti, sodales ad blandit aenean class non elementum, quisque vivamus ullamcorper luctus molestie bibendum. faucibus condimentum tellus nunc quisque etiam cursus dolor scelerisque, ante varius vehicula felis netus cras curabitur aliquet quisque, blandit malesuada luctus fringilla lorem curabitur nulla. lacinia iaculis quam ut ultrices quis urna hac dapibus odio, posuere feugiat sodales quam maecenas quis cursus gravida eros, facilisis augue mi etiam tempus eleifend curae vivamus.</h1>
+                            <h1>Lorem ipsum</h1>
                         </span>
                     </section>
                 </motion.div>
