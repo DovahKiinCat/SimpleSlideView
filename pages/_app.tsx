@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-  <div>
+  <div className='overflow-hidden'>
       <Header/>
       <Component {...pageProps} />
   </div>)
