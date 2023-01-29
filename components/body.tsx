@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 export default function Body() {
     return (
         <>
-        <section className='flex flex-col justify-center h-screen w-full'>
+        <section className='flex flex-col justify-center h-screen w-max-2xl md:w-full'>
             <section className='mx-auto'>
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -29,7 +29,7 @@ export default function Body() {
                 </motion.div>
             </section>
             
-            <section className='w-full flex flex-row justify-between relative p-4 md:absolute md:p-0'>
+            <section className='w-full flex flex-row justify-between relative p-4 md:absolute :p-0'>
                 <motion.div className='flex justify-between w-full'
                     initial={{ opacity: 0, y: 80}}
                     animate={{ opacity: 1, y: 0 }}
