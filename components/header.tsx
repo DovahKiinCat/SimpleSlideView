@@ -10,7 +10,7 @@ export default function Header() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.25 }}
             >
-                <section className='flex justify-between w-4/4 max-w-6xl z-20 mx-auto top-0 p-2 overflow-hidden'>
+                <section className='flex justify-between w-4/4 max-w-6xl z-20 mx-auto top-0 p-2 overflow-hidden md:text-left'>
                     <section className=''>
                         <motion.div
                             whileHover={{ scale: 1.1 }}
