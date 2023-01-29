@@ -15,8 +15,9 @@ export const Icons = {
 }
 
 export const textslide = [
-    "Olá, sou o blablabla",
-    "Teste texto 2",
-    "Como estao?",
-    "Hehe funcionou",
+    "testa os icons de rede social ai vai, aproveita e me segue se funcionar :)))",
+    "text super divertido uau s[o para testar aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "Teste texto so pra testar de novo uuuhuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuul",
+    "blueeee peeeen o melhoooooooooooooooooooooooooooooooooooooooooooooooooooooorrrrrrrrrrrrrr",
+    "odeio programar aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa quase coringuei mas ta indo uhuuuullllllllll"
 ]
