@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function Header() {
     return (
-        <header className='w-full absolute'>
+        <header className='w-screen absolute md:w-full'>
             <motion.div 
                 initial={{ opacity: 0, y: -80 }}
                 animate={{ opacity: 1, y: 0 }}
