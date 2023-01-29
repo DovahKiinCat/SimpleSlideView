@@ -8,7 +8,7 @@ export default function Body() {
 
     const [index, setIndex] = useState(0)
 
-    function loop(count) {
+    function loop(count: number) {
         if (count == textslide.length){
             return count = 0
         }
