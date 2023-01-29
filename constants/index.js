@@ -15,7 +15,7 @@ export const Icons = {
 }
 
 export const textslide = [
-    "Ola pessoas",
+    "Olá, sou o blablabla",
     "Teste texto 2",
     "Como estao?",
     "Hehe funcionou",

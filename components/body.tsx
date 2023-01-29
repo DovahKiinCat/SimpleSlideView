@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { motion } from "framer-motion"
 import { textslide } from "../constants"
-import { text } from 'stream/consumers'
+import Typewriter from 'typewriter-effect'
 import {useState} from "react"
 
 export default function Body() {
@@ -28,7 +28,14 @@ export default function Body() {
                     transition={{ delay: 0.25 }}
                 >
                     <section className='font-bold text-white text-4xl tracking-wide p-2 text-center sm:text-left sm:text-4xl '>
-                        <h1>Lorem ipsum...</h1>
+                        <h1><Typewriter
+                            options={{
+                                strings: ["Lorem ipsum", "Lorem ipsum"],
+                                autoStart: true,
+                                loop: true
+                            }}
+                            />
+                        </h1>
                     </section>
                 </motion.div>
 
