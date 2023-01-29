@@ -1,7 +1,23 @@
 import Image from 'next/image'
 import { motion } from "framer-motion"
+import { textslide } from "../constants"
+import { text } from 'stream/consumers'
+import {useState} from "react"
 
 export default function Body() {
+
+    const [index, setIndex] = useState(0)
+
+    function loop(count) {
+        if (count == textslide.length){
+            return count = 0
+        }
+        if (count < 0){
+            return count = textslide.length
+        }
+        return count
+    }
+
     return (
         <>
         <section className='flex flex-col justify-center h-screen w-full'>
@@ -22,9 +38,11 @@ export default function Body() {
                     transition={{ delay: 0.25 }}
                 >
                     <section className='relative bg-white w-[350px] h-[450px] rounded-2xl shadow-xl sm:w-[700px] sm:h-[300px]'>
-                        <span className='flex p-6 font-bold text-1xl'>
-                            <h1>Lorem ipsum</h1>
-                        </span>
+                        <h1 className='flex p-6 font-bold text-1xl'>
+                            <span className='className='>
+                                {textslide[index]}
+                            </span>
+                        </h1>
                     </section>
                 </motion.div>
             </section>
@@ -35,8 +53,8 @@ export default function Body() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.25 }}
                 >
-                    <Image src="/images/chevron-left.png" width={140/2} height={140/2} alt="arrow-left" className='_arrow'/>
-                    <Image src="/images/chevron-right.png" width={140/2} height={140/2} alt="arrow-right" className='_arrow'/>
+                    <Image onClick={()=>setIndex(count => loop(count-1))} src="/images/chevron-left.png" width={140/2} height={140/2} alt="arrow-left" className='_arrow'/>
+                    <Image onClick={()=>setIndex(count => loop(count+1))} src="/images/chevron-right.png" width={140/2} height={140/2} alt="arrow-right" className='_arrow'/>
                 </motion.div>
             </section>
         </section>

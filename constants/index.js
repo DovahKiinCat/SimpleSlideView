@@ -13,3 +13,10 @@ export const Icons = {
         {url: "email"},
     ]
 }
+
+export const textslide = [
+    "Ola pessoas",
+    "Teste texto 2",
+    "Como estao?",
+    "Hehe funcionou",
+]
