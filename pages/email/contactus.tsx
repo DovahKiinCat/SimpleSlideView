@@ -38,14 +38,14 @@ export default function Contact() {
                             required
                             maxLength={1048576}
                             placeholder="Additional information"
-                            className="outline-none rounded-2xl px-8 py-6 min-h-[16em] scrollbar scrollbar-thumb-black scrollbar-track-gray-200">
+                            className="border-2 outline-none rounded-2xl px-8 py-6 min-h-[16em] scrollbar hover:scrollbar-thumb-gray-900 scrollbar-thumb-black scrollbar-track-gray-200">
                         </textarea>
                     </form>
                 </section>
             </section>
 
-            <section className="text-center mt-5">
-                <button type="submit" className="font-bold rounded-2xl bg-white shadow-xl p-2">
+            <section className="text-center p-4">
+                <button type="submit" className="font-bold rounded-2xl bg-white shadow-xl p-3">
                     Enviar
                 </button>
             </section>
