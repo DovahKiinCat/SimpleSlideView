@@ -46,7 +46,7 @@ export default function Contact() {
 
             <section className="text-center mt-5">
                 <button type="submit" className="font-bold rounded-2xl bg-white shadow-xl p-2">
-                    kk so um butao
+                    Enviar
                 </button>
             </section>
 
