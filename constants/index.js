@@ -10,7 +10,7 @@ export const Icons = {
         bg: "transparent"
     },
     secondary: [
-        {url: "email"},
+        {url: "email/contactus"},
     ]
 }
 

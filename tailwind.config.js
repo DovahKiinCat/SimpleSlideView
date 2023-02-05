@@ -8,7 +8,11 @@ module.exports = {
     "./styles/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+      '128': '550px',
+      },
+    },
   },
   plugins: [],
 }

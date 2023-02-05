@@ -1,8 +1,9 @@
-import Header from "../components/header"
+import Header from "./header"
 import Body from "./body"
-
+import Contact from "../pages/email/contactus"
 
 export{
     Header,
-    Body
+    Body,
+    Contact
 }

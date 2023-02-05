@@ -32,8 +32,8 @@ export default function Header() {
                             whileTap={{ scale: 0.9 }}
                         >
                             {Icons.secondary.map((icon, index) => (
-                                <SocialIcon
-                                    url={`https://www${icon.url}`}
+                                <SocialIcon 
+                                    url={`${icon.url}`}
                                     fgColor={Icons.color.primary}
                                     bgColor={Icons.color.bg}
                                     key={index}
