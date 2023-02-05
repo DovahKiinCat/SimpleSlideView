@@ -1,5 +1,7 @@
 import Layout from "layout/layout"
 import { useForm, ValidationError } from "@formspree/react"
+import Typewriter from "typewriter-effect"
+import Link from "next/link"
 
 export default function ContactForm() {
 
@@ -7,7 +9,21 @@ export default function ContactForm() {
 
     if (state.succeeded) {
         return (
-            <p className="flex flex-col justify-center text-center h-screen w-full text-white font-bold text-4xl">Obrigado por entrar em contato!</p>
+            <>
+            <p className="flex flex-col justify-center text-center h-screen w-full text-white font-bold text-4xl">
+                <Typewriter
+                    options={{
+                        strings: ["Obrigado por entrar em contato!"],
+                        autoStart: true,
+                        loop: false,
+                        delay: 10,
+                        deleteSpeed: 100,
+                    }}
+                />    
+            </p>
+            <Link href={"../"}>
+            </Link>
+            </>
         )
     }
 
@@ -20,7 +36,7 @@ export default function ContactForm() {
         <section className="flex-1 flex flex-col justify-center h-screen w-full">
 
             <section className="mx-auto">
-                <section className="relative bg-white w-[350px] h-[450px] rounded-2xl shadow-xl sm:w-[700px] sm:h-[550px]"> 
+                <section className="relative bg-white w-[350px] h-[500px] rounded-2xl shadow-xl top-[-25px] lg:w-[700px] lg:h-[500px] lg:top-[-45px]"> 
                     <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-16 p-4 lg:mt-20 min-w-full lg:min-w-[500px]">
                         <input 
                             id="companyName"
@@ -89,10 +105,18 @@ export default function ContactForm() {
                             errors={state.errors}
                         />
 
-                    <section className="text-center p-6 lg:p-6">
-                        <button type="submit" disabled={state.submitting} className="relative bg-black text-white font-bold rounded-2 shadow-xl rounded-2xl w-20 h-12">
+                    <section className="flex justify-between text-center p-0 lg:p-0">
+                        <Link href={"../"}>
+                            <button className="relative text-black border-2 border-sky-500 font-bold rounded-2 shadow-xl rounded-2xl w-28 h-12">
+                                Home
+                            </button>
+                        </Link>
+                        
+
+                        <button type="submit" disabled={state.submitting} className="relative text-black border-2 border-sky-500 font-bold rounded-2 shadow-xl rounded-2xl w-28 h-12">
                             Enviar
                         </button>
+
                     </section>
 
                     </form>
