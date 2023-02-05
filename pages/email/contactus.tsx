@@ -7,7 +7,7 @@ export default function Contact() {
 
         </Layout>
 
-        <section className="flex flex-col justify-center h-screen w-full">
+        <section className="flex-1 flex flex-col justify-center h-screen w-full">
 
             <section className="mx-auto">
                 <section className="relative bg-white w-[350px] h-[450px] rounded-2xl shadow-xl sm:w-[700px] sm:h-[550px]"> 
@@ -22,7 +22,7 @@ export default function Contact() {
                             className="outline-none border-2 rounded-2xl px-8 py-2"
                         />
 
-                        <input type="text" 
+                        <input 
                             id="email"
                             name="email"
                             type="email"
@@ -44,8 +44,8 @@ export default function Contact() {
                 </section>
             </section>
 
-            <section className="relative flex justify-center p-4">
-                <button className="font-bold rounded-2xl bg-white shadow-xl p-2">
+            <section className="text-center mt-5">
+                <button type="submit" className="font-bold rounded-2xl bg-white shadow-xl p-2">
                     kk so um butao
                 </button>
             </section>
