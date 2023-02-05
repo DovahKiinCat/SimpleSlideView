@@ -19,8 +19,27 @@ export default function Contact() {
                             maxLength={128}
                             type="text"
                             placeholder="Company name"
-                            className="bg-black text-white outline-none border-2 rounded-2xl"
+                            className="outline-none border-2 rounded-2xl px-8 py-2"
                         />
+
+                        <input type="text" 
+                            id="email"
+                            name="email"
+                            type="email"
+                            required
+                            maxLength={128}
+                            placeholder="Your E-mail"
+                            className="outline-none border-2 rounded-2xl px-8 py-2"
+                        />
+
+                        <textarea 
+                            id="message" 
+                            name="message"
+                            required
+                            maxLength={1048576}
+                            placeholder="Additional information"
+                            className="outline-none rounded-2xl px-8 py-6 min-h-[16em] scrollbar scrollbar-thumb-black scrollbar-track-gray-200">
+                        </textarea>
                     </form>
                 </section>
             </section>
