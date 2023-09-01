@@ -44,7 +44,7 @@ export default function Body() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.25 }}
                 >
-                    <section className='relative bg-white w-[350px] h-[450px] rounded-2xl shadow-xl sm:w-[700px] sm:h-[300px]'>
+                    <section className='relative bg-white w-[600px] h-[450px] rounded-2xl shadow-xl sm:w-[700px] sm:h-[300px]'>
                         <h1 className='flex p-6 font-bold text-1xl'>
                             <span className='break-all'>
                                 {textslide[index]}

@@ -1,6 +1,5 @@
 import Layout from "layout/layout"
 import { useForm, ValidationError } from "@formspree/react"
-import Typewriter from "typewriter-effect"
 import Link from "next/link"
 import { motion } from "framer-motion"
 
@@ -11,19 +10,14 @@ export default function ContactForm() {
     if (state.succeeded) {
         return (
             <>
-            <p className="flex flex-col justify-center text-center h-screen w-full text-white font-bold text-4xl">
-                <Typewriter
-                    options={{
-                        strings: ["Obrigado por entrar em contato!"],
-                        autoStart: true,
-                        loop: false,
-                        delay: 10,
-                        deleteSpeed: 100,
-                    }}
-                />    
-            </p>
-            <Link href={"../"}>
-            </Link>
+                    <p className="flex flex-col justify-center text-center h-screen w-full text-white font-bold text-4xl">
+                        Obrigado por entrar em contato!
+                    <Link className="p-4" href={"../"}>
+
+                        <button className="bg-black p-4 rounded-xl">Voltar ao início</button>
+
+                    </Link>
+                    </p>
             </>
         )
     }
@@ -37,7 +31,7 @@ export default function ContactForm() {
         <section className="flex-1 flex flex-col justify-center h-screen w-full">
             <section className="mx-auto">
                 <motion.div
-                    initial={{opacity: 0, y: -30}}
+                    initial={{opacity: 0, y: -200}}
                     animate={{opacity: 1, y: 0}}
                     transition={{delay: 0.25}}
                 >

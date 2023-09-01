@@ -16,8 +16,8 @@ export const Icons = {
 
 export const textslide = [
     "text",
-    "text",
-    "text",
-    "text",
-    "text"
+    "text - 2",
+    "text - 3",
+    "text - 4",
+    "text - 5"
 ]
