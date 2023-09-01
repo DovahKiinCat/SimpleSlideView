@@ -30,7 +30,7 @@ export default function Body() {
                     <section className='font-bold text-white text-4xl tracking-wide p-2 text-center sm:text-left sm:text-4xl '>
                         <h1><Typewriter
                             options={{
-                                strings: ["Uau...", "O texto muda :0", "Tecnologia"],
+                                strings: ["Text"],
                                 autoStart: true,
                                 loop: true
                             }}
